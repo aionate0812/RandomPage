@@ -40,6 +40,12 @@ let students = [
   "Van","Van","Van","Van","Van",
   "Heriberto","Heriberto","Heriberto","Heriberto","Heriberto",
   "Erika","Erika","Erika","Erika","Erika",
+  "Brandon","Brandon","Brandon","Brandon","Brandon","Brandon","Brandon",
+  "Susana","Susana","Susana","Susana","Susana","Susana","Susana",
+  "Carlos","Carlos","Carlos","Carlos","Carlos","Carlos","Carlos",
+  "Joyce","Joyce","Joyce","Joyce","Joyce","Joyce","Joyce",
+  "Mo","Mo","Mo","Mo","Mo","Mo","Mo",
+  "Taq","Taq","Taq","Taq","Taq","Taq","Taq","Taq","Taq"
 ];
 
 // let titles = [
