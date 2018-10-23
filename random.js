@@ -12,7 +12,7 @@ let students = [
   "Mielyn",
   "Daniel",
   "Saying",
-  "Malcom",
+  "Mary",
   "James",
   "Victoria",
   "Qiuyun",
