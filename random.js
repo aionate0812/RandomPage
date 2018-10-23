@@ -28,7 +28,7 @@ let students = [
   "Hervey","Hervey","Hervey","Hervey","Hervey",
   "Anthony","Anthony","Anthony","Anthony","Anthony",
   "Ariana",
-  "Abdul",
+  "Adam",
   "Jennifer",
   "Steven","Steven","Steven","Steven","Steven",
   "Johnny",
