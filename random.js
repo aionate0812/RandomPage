@@ -7,45 +7,40 @@ let choice;
 let titles;
 
 let students = [
-  "Pamela","Pamela","Pamela","Pamela",
-  "Ricardo",
-  "Mielyn","Mielyn","Mielyn","Mielyn",
-  "Daniel","Daniel","Daniel","Daniel",
-  "Saying",
-  "Mary",
-  "James","James","James","James",
+  "Pamela",
+  "Robert",
+  "Mielyn",
+  "Daniel",
+  "Syed",
+  "Malcom",
+  "Jorge",
   "Victoria",
-  "Lauren","Lauren","Lauren","Lauren",
-  "Srirupa","Srirupa","Srirupa","Srirupa",
-  "Stephanie","Stephanie","Stephanie","Stephanie",
-  "Vinnie",
-  "Nelson","Nelson","Nelson","Nelson","Nelson",
-  "Richard","Richard","Richard","Richard","Richard",
+  "Qiuyun",
+  "Srirupa",
+  "Stephanie",
+  "Vincent",
+  "Nadav",
+  "Richard",
   "Nicole",
-  "Chuyun","Chuyun","Chuyun","Chuyun","Chuyun",
-  "Osita","Osita","Osita","Osita","Osita",
-  "Tania",
-  "Hervey","Hervey","Hervey","Hervey","Hervey",
-  "Anthony","Anthony","Anthony","Anthony","Anthony",
-  "Ariana",
-  "Adam",
+  "Chuyun",
+  "Osita",
+  "Tarekul",
+  "Hervey",
+  "Anthony",
+  "Alexander",
+  "Abdel",
   "Jennifer",
-  "Steven","Steven","Steven","Steven","Steven",
+  "Steven",
   "Johnny",
   "Jose",
-  "Serge","Serge","Serge","Serge","Serge","Serge",
-  "Ivy", "Ivy", "Ivy", "Ivy", "Ivy",
-  "Karina",
-  "Aaron","Aaron","Aaron","Aaron","Aaron",
-  "Van","Van","Van","Van","Van",
-  "Heriberto","Heriberto","Heriberto","Heriberto","Heriberto",
-  "Erika","Erika","Erika","Erika","Erika",
-  "Brandon","Brandon","Brandon","Brandon","Brandon","Brandon","Brandon",
-  "Susana","Susana","Susana","Susana","Susana","Susana","Susana",
-  "Carlos","Carlos","Carlos","Carlos","Carlos","Carlos","Carlos",
-  "Joyce","Joyce","Joyce","Joyce","Joyce","Joyce","Joyce",
-  "Mo","Mo","Mo","Mo","Mo","Mo","Mo",
-  "Taq","Taq","Taq","Taq","Taq","Taq","Taq","Taq","Taq"
+  "Serge",
+  "Ivy",
+  "Karan",
+  "Aaron",
+  "Van",
+  "Heriberto",
+  "Erika",
+  "Kevin",
 ];
 
 // let titles = [
@@ -125,14 +120,31 @@ let pickOnClick = function (event) {
 
 let pairClick = function (event) {
   choice.innerHTML = '&nbsp;'
-  let rand = students.splice(Math.floor(Math.random() * students.length),1); 
-  let randTwo = students.splice(Math.floor(Math.random() * students.length),1);
+
+  let rand = 0;
+  const studentArr = [];
+
+
+  for (let i = 0 ; i < 6 ; i++) {
+
+    rand = students.splice((Math.floor(Math.random() * students.length)) % 33 ,6); 
+    studentArr.push(rand); 
+
+   }
+  
+   let rand1 = studentArr[0];
+   let rand2 = studentArr[1];
+   let rand3 = studentArr[2];
+   let rand4 = studentArr[3];
+   let rand5 = studentArr[4];
+   let rand6 = studentArr[5];
+
 
   let x = window.setInterval(() => {
     if (colors[cur] === undefined) {
       window.clearInterval(x);
       cur = 0;
-      choice.innerHTML = rand + ' + ' + randTwo
+      choice.innerHTML = rand1 , '\n' + rand2, '\n' + rand3, '\n' + rand4, '\n', rand5, + '\n' + rand6; 
       // return;  
     }  
     if (colors[cur]) header.style.color = colors[cur];
