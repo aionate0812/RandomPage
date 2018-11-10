@@ -94,26 +94,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 let pickOnClick = function (event) {
-  choice.innerHTML = '&nbsp;'
-  let rand = students.splice(Math.floor(Math.random() * students.length),1); 
-  // let title = titles.splice(Math.floor(Math.random() * titles.length), 1);
-  let x = window.setInterval(() => {
-    if (colors[cur] === undefined) {
-      body.style.backgroundColor = 'goldenrod;'
-      window.clearInterval(x);
-      cur = 0;
-      if (rand[0].length % 2 === 0) {
-        rand[0] = rand[0] 
-      }
-      choice.innerText = (rand[0] /*+ ' ' + title*/).toUpperCase() + '!'
+  choice.innerHTML = 'THANK YOU FOR YOUR INFORMATION'
+  // let rand = students.splice(Math.floor(Math.random() * students.length),1); 
+  // // let title = titles.splice(Math.floor(Math.random() * titles.length), 1);
+  // let x = window.setInterval(() => {
+  //   if (colors[cur] === undefined) {
+  //     body.style.backgroundColor = 'goldenrod;'
+  //     window.clearInterval(x);
+  //     cur = 0;
+  //     if (rand[0].length % 2 === 0) {
+  //       rand[0] = rand[0] 
+  //     }
+  //     choice.innerText = (rand[0] /*+ ' ' + title*/).toUpperCase() + '!'
     
-      // return;
+  //     // return;
       
-    }  
-    if (colors[cur]) header.style.color = colors[cur];
-    if (colors[cur-1]) body.style.backgroundColor = colors[cur-1];
-    cur += 1;
-  });
+  //   }  
+  //   if (colors[cur]) header.style.color = colors[cur];
+  //   if (colors[cur-1]) body.style.backgroundColor = colors[cur-1];
+  //   cur += 1;
+  // });
   console.log("current color cur:",colors[cur])
 }
 
